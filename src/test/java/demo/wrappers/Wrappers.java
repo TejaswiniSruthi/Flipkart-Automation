@@ -93,10 +93,6 @@ public class Wrappers {
 
     public void setFilter(By dropDown, By checkBox){
         try{
-            if(driver.findElements(checkBox).isEmpty() || !driver.findElement(checkBox).isDisplayed()){
-                WebElement dd = wait.until(ExpectedConditions.elementToBeClickable(dropDown));
-                dd.click();
-            }
             WebElement cb = wait.until(ExpectedConditions.elementToBeClickable(checkBox));
             cb.click();
             Thread.sleep(2000);

@@ -72,9 +72,10 @@ public class TestCases {
         Wrappers wrap = new Wrappers(driver);
 
         wrap.typeText(By.name("q"), "iPhone");
+        Thread.sleep(1000);
 
-        wrap.setFilter(By.xpath("//div[text()='Discount']//following-sibling::*[1]"),
-                By.xpath("//div[text()='Discount']/ancestor::section//div[contains(text(),'10% or more')]"));
+//        wrap.setFilter(By.xpath("//div[text()='Discount']//following-sibling::*[1]"),
+//                By.xpath("//div[text()='Discount']/ancestor::section//div[contains(text(),'10% or more')]"));
 
         List<WebElement> products = wrap.getElements(By.xpath(
                 "//div[@class='HQe8jr']//span[contains(text(),'%')]"));
