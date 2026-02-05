@@ -90,6 +90,7 @@ public class TestCases {
 
     @Test
     public void testCase03() throws InterruptedException {
+        System.out.println();
         System.out.println("Start Test Case: 03");
 
         Wrappers wrap = new Wrappers(driver);

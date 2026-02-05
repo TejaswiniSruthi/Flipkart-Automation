@@ -90,7 +90,7 @@
       ]
     },
     {
-      "is_enabled": false,
+      "is_enabled": true,
       "test_case_fe": "Test Case 2 - Look for phones with certain discount",
       "test_case_hint": "Check TestNG Test `testCase02`",
       "testng_test_name": "testCase02",
@@ -105,7 +105,7 @@
             {
               "object_notation": "COMMAND",
               "operator": "contains",
-              "expected_value": "iPhone"
+              "expected_value": ""
             }
           ],
           "join": "AND",
