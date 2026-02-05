@@ -121,5 +121,6 @@ Not open for contributions yet, but ideas, improvements, and suggestions are wel
 
 ## 📎 Author
 
-**Tejaswini Thambabathula**
-Learning automation, testing, and SDET workflow building.
+**Tejaswini Thambabathula**  
+Automation & Testing Enthusiast | Aspiring SDET  
+GitHub: https://github.com/TejaswiniSruthi
