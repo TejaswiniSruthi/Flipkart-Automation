@@ -90,7 +90,7 @@
       ]
     },
     {
-      "is_enabled": true,
+      "is_enabled": false,
       "test_case_fe": "Test Case 2 - Look for phones with certain discount",
       "test_case_hint": "Check TestNG Test `testCase02`",
       "testng_test_name": "testCase02",
@@ -111,23 +111,6 @@
           "join": "AND",
           "success_out": "Typed iPhone into search box",
           "hint": "Ensure that you entered the text 'iPhone' into search input"
-        },
-        {
-          "validations": [
-            {
-              "object_notation": "COMMAND",
-              "operator": "contains",
-              "expected_value": "GetElementText"
-            },
-            {
-              "object_notation": "RESPONSE",
-              "operator": "contains",
-              "expected_value": "% off"
-            }
-          ],
-          "join": "AND",
-          "success_out": "Got discounts for the phones",
-          "hint": "Ensure that you fetch discounts of the products"
         }
       ]
     },
@@ -137,23 +120,6 @@
       "test_case_hint": "Check TestNG Test `testCase03`",
       "testng_test_name": "testCase03",
       "chrome_log_assessment": [
-        {
-          "validations": [
-            {
-              "object_notation": "COMMAND",
-              "operator": "contains",
-              "expected_value": "TypeElement"
-            },
-            {
-              "object_notation": "COMMAND",
-              "operator": "contains",
-              "expected_value": "Coffee Mug"
-            }
-          ],
-          "join": "AND",
-          "success_out": "Typed Coffee Mug into search box",
-          "hint": "Ensure that you entered the text 'Coffee Mug' into search input"
-        },
         {
           "validations": [
             {

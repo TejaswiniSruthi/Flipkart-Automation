@@ -131,8 +131,9 @@ def chromelog_validation_assess(**kwargs):
     log_path = kwargs.get('log_path')
     chrome_log_assessments = kwargs.get('chrome_log_assessment')
     if not log_path or not chrome_log_assessments:
-        print(f"Internal error, check instructions or connect with support - {str(e)}")
+        print("Internal error, missing log_path or chrome_log_assessment")
         quit()
+
     
     test_suite=kwargs.get('test_suite')
     hints = []
