@@ -91,7 +91,7 @@ public class Wrappers {
         }
     }
 
-    public void setFilter(By dropDown, By checkBox){
+    public void setFilter(By checkBox){
         try{
             WebElement cb = wait.until(ExpectedConditions.elementToBeClickable(checkBox));
             cb.click();

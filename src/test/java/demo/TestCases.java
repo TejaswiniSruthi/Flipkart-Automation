@@ -1,11 +1,9 @@
 package demo;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -15,7 +13,6 @@ import java.time.Duration;
 import java.util.List;
 
 
-// import io.github.bonigarcia.wdm.WebDriverManager;
 import demo.wrappers.Wrappers;
 
 
@@ -75,13 +72,11 @@ public class TestCases {
         wrap.typeText(By.name("q"), "iPhone");
         Thread.sleep(1000);
 
-//        wrap.setFilter(By.xpath("//div[text()='Discount']//following-sibling::*[1]"),
-//                By.xpath("//div[text()='Discount']/ancestor::section//div[contains(text(),'10% or more')]"));
+        wrap.setFilter(By.xpath(
+                "//div[text()='Discount']/ancestor::section//div[contains(text(),'10% or more')]"));
 
         List<WebElement> products = wrap.getElements(By.xpath(
                 "//div[@class='HQe8jr']//span[contains(text(),'%')]"));
-
-
 
 //        Print Title and Discount of products
         wrap.iphoneTitleAndDiscount(products);
@@ -102,8 +97,8 @@ public class TestCases {
         wrap.typeText(By.name("q"), "Coffee Mug");
 
         //Click on Four Star and Above
-        wrap.setFilter(By.xpath("//div[text()='Customer Ratings']//following-sibling::*[1]"),
-                By.xpath("//div[text()='Customer Ratings']/ancestor::section//div[contains(text(),'4')]"));
+        wrap.setFilter(By.xpath(
+                "//div[text()='Customer Ratings']/ancestor::section//div[contains(text(),'4')]"));
 
         //Get all the product cards
         List<WebElement> products = wrap.getElements(By.xpath("//div[@class='RGLWAk']"));
